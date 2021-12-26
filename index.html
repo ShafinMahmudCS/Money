@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="Styles/style.css" title="style" />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</head>
+<body>
+        
+        <div class="navigation">
+            <div class="Navbar__Link Navbar__Link-brand">
+              <img src="icon.png" alt="icon" id="i_con">
+             </div>
+             <div class="Navbar__Link Navbar__Link-toggle">
+              <i class="fas fa-bars"></i>
+             </div>
+        
+           <nav class="Navbar__Items Navbar__Items--right" id="alignment">
+        
+              <a href="index.html" ><b>Home</b></a>
+              <a href="#jump1" ><b>About</b></a>
+              <a href="#jump2" ><b>Instructions</b></a>
+             
+           </nav>
+         </div>
+
+<header class="main-header">
+    <h1>We <span>Care </span>about your <span>Money</span>.</h1>
+    <p>The extension will be soon available on Chrome web store</p>
+
+    <img id="extension" src="extension.png" alt="">
+    </header>
+
+    <div id="jump1"></br></br></br></div>
+
+    <main class="container">
+        <p class="contain_head"><b>About</b></p>
+    <section class="card" data-aos="fade-up-left">
+        <img src="https://images.pexels.com/photos/1602726/pexels-photo-1602726.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="unaffordable" />
+        <div class="details">
+            <p >There are times when we can not afford something, or we do not want to spend much money on a particular product.
+                Checking price updates manually for sales can be tiring, so you can use this extension to do the work for you.
+                 It will check for price updates continuously, and when there is a reduction, it will notify you instantly.
+             </p>
+        </div>
+    </section>
+
+    <!-- Photo by maitree rimthong from Pexels -->
+    <section class="card" data-aos="fade-up-right">
+        <img src="icons/deals.jpg" alt="lowest price" />
+        <div class="details">
+            <p>As a product's price varies across stores, we often manually look for a better price, but with this extension, 
+                you can find the lowest price available over the internet within seconds.
+              </p>
+        </div>
+    </section>
+
+    <!-- Photo by RODNAE Productions from Pexels -->
+    <section class="card" data-aos="flip-up">
+        <img src="https://cdn.pixabay.com/photo/2017/09/29/23/44/feedback-2800867_960_720.png" alt="Best rated" />
+        <div class="details">
+            <p>The lowest price might not be the best deal because of the product's quality,
+                so product rating can be very important. This extension can find the best-rated product available over the internet.
+             </p>
+        </div>
+    </section>
+
+    <section class="card" data-aos="flip-right">
+        <img src="icons/Wish List.jpeg" alt="out of stock" />
+        <div class="details">
+            <p>Often you cannot buy affordable items because they ran out of stock, but you do not have to worry when you have this extension.
+                This extension will continuously look for the availability of the item you
+                 are looking for and will notify you as soon as stocks are available.
+             </p>
+        </div>
+    </section>
+
+    <div id="jump2"></br></br></br></div>
+
+        <p class="contain_head"><b>Instructions</b></p>
+        <section class="card2">
+            <p class="bg_white">Find similar products:</p>
+            <p class="details"><b>Search any products you want, this extension will find the best rated and the lowest priced product available on the internet along with some other options.</b></p>
+            <ul>
+                <li>You will get the title, price, rating and the image of the product.</li>
+                <li>You can click the title of the product to take you to the website that has listed the product.</li>
+            </ul>
+        </section>
+
+        <section class="card2">
+            <p class="bg_white">Reduced price notifier:</p>
+            <p class="details"><b>This involves a little work but once the setup is complete it will continuously look for price reduction and will notify you instantly.</b></p>
+            <ul>
+                <li> Inspect element</li>
+            </ul>
+            <img src="icons/Screenshot.png" alt="Screenshot">
+            <ul>
+                <li>Hover over the price to get the Id</li>
+                <li>Enter the id and your email address</li>
+            </ul>
+        </section>
+                <section class="card2">
+            <p class="bg_white">Stock availability notifier:</p>
+            <ul>
+                <li>Enter a keyword that might change when stock becomes available, for example: Unavailable which will change to Available,
+                     "Out of Stock" will change to Stock available and so on. As soon as a change it detected, this extension will notify you instantly.</li>
+            </ul>
+        </section>  
+
+        <section class="card2">
+            <p class="bg_white">Amazon exclusive price history:</p>
+            <p class="details">This feature is currently available for Amazon only</p>
+            <ul>
+                <li>When you are on a product page of Amazon's website, open the extension you will find the price history of the product instantly.
+            </ul>
+        </section>
+
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
