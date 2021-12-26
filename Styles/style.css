@@ -132,7 +132,7 @@ img {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
   background: #f1f1f1;
-  margin-top: 4rem;
+  margin-top: 3rem;
   margin-bottom: 2rem;
   border: 2px solid #000;
   height: 15%;
@@ -189,10 +189,14 @@ img {
   }
 
   .card img {
+    width: 90%;
+    height: 60%;
+  }
+
+  #extension {
     width: 100%;
     height: 70%;
   }
-
   .container {
     margin: 0 auto;
     padding: 0 auto;
@@ -215,13 +219,17 @@ img {
   }
 
   #i_con {
-    width: 45%;
-    height: 45%;
+    width: 17%;
+    height: 17%;
     min-height: inherit;
   }
   .main-header h1 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
+  }
+
+  .contain_head {
+    font-size: 1.5rem;
   }
 
   .main-header p {
