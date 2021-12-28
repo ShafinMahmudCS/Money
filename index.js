@@ -1,3 +1,9 @@
+var loader = setInterval(function () {
+  if(document.readyState !== "complete") return;
+  clearInterval(loader);
+  document.querySelector('.spinner-wrapper').style.display = "none";
+}, 250);
+
 $(document).ready(function(){
     $("a").on('click', function(event) {
       if (this.hash !== "") {
@@ -13,11 +19,11 @@ $(document).ready(function(){
     });
   });
 
-function classToggle() {
-  const navs = document.querySelectorAll('.Navbar__Items')
+  function classToggle() {
+    const navs = document.querySelectorAll('.Navbar__Items')
+    
+    navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
+  }
   
-  navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
-}
-
-document.querySelector('.Navbar__Link-toggle')
-  .addEventListener('click', classToggle);
+  document.querySelector('.Navbar__Link-toggle')
+    .addEventListener('click', classToggle);
